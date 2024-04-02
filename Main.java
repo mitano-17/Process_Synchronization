@@ -3,7 +3,7 @@ import java.io.*;
 
 public class Main {
 
-    public static void main(String[] args)
+    public static void main(String[] args) throws InterruptedException
     {
         String name,line;
         String[] split;
