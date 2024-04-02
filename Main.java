@@ -11,21 +11,18 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         Scanner sc2;
 
-        int regCitizens = 0;
-        int superCitizens = 0;
-
         try{
             System.out.println("Input: ");
             System.out.print("No. of Regular Citizens = ");
-            regCitizens = sc.nextInt();
+            sharedVar.regCitizens = sc.nextInt();
             System.out.print("No. of Super Citizens = ");
-            superCitizens = sc.nextInt();
+            sharedVar.superCitizens = sc.nextInt();
             sc.close();
 
-            createGroup.createGroup(regCitizens, superCitizens);
+            createGroup.createGroup();
         }
         catch(Exception e) {
-            System.out.println("Invalid data type");
+            System.out.println("An error occurred");
         }
 
     }
