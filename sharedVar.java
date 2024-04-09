@@ -5,6 +5,7 @@ class sharedVar
     /* Set shared variable to be incremented/decremented */
     static int groupCount = 0;
     static int maxSuper = 2;
+    static int minSuper= 1;
     static int memberCount = 0;
 
     static int regCitizens = 0;
